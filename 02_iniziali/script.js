@@ -4,12 +4,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function initialNamesOfTheArray(namesArray) {
- newArray = ["A", "L", "M", "A", "G", "A"];
-    if(namesArray === newArray)
-        return fal
-  
+  //let newArray = [namesArray[0][0],namesArray[1][0],];
+  let newArray = [];
+  for (let i = 0; i < namesArray.length; i++) {
+    newArray.push(namesArray[i][0]);
+  }
+  return newArray;
 }
-
+console.log(initialNamesOfTheArray(names));
 // Invoca la funzione qui e stampa il risultato in console
-const initialNamesOfTheArray(names);
+//const initialNamesOfTheArray(names);
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
